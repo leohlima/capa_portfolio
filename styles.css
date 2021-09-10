@@ -1,0 +1,273 @@
+/* 0. Variáveis
+/* 1. Estilos gerais
+/* 2. Aside
+/* 3. Main
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+:root {
+    --clr-brown: #C26520; 
+    --clr-brown-light: #948F34; 
+    --clr-brow-soft: #FAC13E;   
+    --clr-white: #f5f5f5; 
+    --clr-red: rgb(184, 5, 5);
+    --clr-black: #000;
+}
+
+/* 1. Estilos gerais
+/**********************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    background-color: var(--clr-white);
+}
+
+.center-img {
+    background-size: cover;     /*a imagem se adapta ao tamanho da div*/
+    background-position: center;
+}
+
+i {
+    display: block;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a,
+a:active,
+a:checked,
+a:link,
+a:visited {
+    cursor: pointer;
+    outline: none;
+    color: black
+}
+
+hr {
+    margin: 20px 0 20px 0;
+    border: 2px solid var(--clr-red);
+}
+
+strong {
+    color: rgb(9, 175, 9);
+}
+
+h1 {
+    color: var(--clr-brown);
+}
+
+h2 {
+    color: var(--clr-red);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 583px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 3px solid red;
+        border-right: unset;
+    }
+
+    .aside__box {
+      
+       margin: 0 auto 0 auto;
+    }   
+
+    hr {
+        width: 50%;
+        margin: 20px auto 20px auto;
+    }
+
+    .main-c {
+        padding: 10px;
+    }
+
+    .main-c__button {
+        margin: 20px auto 20px auto;
+    }
+    .main-c__skills {
+        text-align: center;
+    }
+
+    .skills__icons img {
+        margin: 0 auto 0 auto;
+    }
+}
+
+/**********************************/
+/* 2. Aside
+/**********************************/
+.container {
+   display: flex;
+   flex-direction: row;  
+}
+
+aside {
+    background-color: white;
+    margin-top: 0;
+    padding: 20px;      
+    border-right: 3px solid red;
+   
+}
+
+.aside__box {
+    padding-top: 10px;
+    height: 100vh; 
+  
+}
+
+
+
+.aside__box h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: var(--clr-brown);
+    
+}
+
+.aside__box__eulindao {
+    background-image: url('./assets/eu.jpeg');
+    width: 150px;
+    height: 150px;
+    border:none;
+    border-radius: 100px;
+    margin: 0 auto 15px auto;
+}
+
+.aside__box p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.aside__box h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    justify-content: center;
+    display: flex;
+}
+
+.icon-box i {
+    margin: 0 10px 20px 0;
+    font-size: 1.5rem; 
+    transition: 0.5s;
+}
+
+.icon-box #linkedin:hover {
+    color: blue;
+}
+
+.icon-box #instagram:hover {
+    color: purple;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#email-icon {
+    font-size: 1.5rem;
+    top: 20px;
+    transition: 0.5s;
+}
+
+#email-icon:hover {
+    color: dodgerblue;
+}
+
+
+/**********************************/
+/* 3. Main
+/**********************************/
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-c {
+    padding: 30px;
+  
+    
+}
+
+.main-c__funcao h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-c__button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.main-c__button {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--clr-red);
+    padding: 8px;
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    transition: .5s;
+    align-items: center;
+    font-size: 1rem;
+}
+
+button:hover {
+    color: var(--clr-red);
+    background-color: var(--clr-white);
+}
+button:hover a {
+    color: red;
+}
+
+button i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.main-c__descricao p {
+    text-align:left;
+    line-height: 25.30px;
+    
+}
+
+.main-c__skills h2 {
+    margin-bottom: 20px;
+}
+
+img {
+    height: 100px;
+    width: 200px;
+}
