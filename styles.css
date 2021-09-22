@@ -146,12 +146,14 @@ aside {
 }
 
 .aside__box__eulindao {
-    background-image: url('./assets/eu.jpeg');
+    background-image: url('./assets/euzao.jpg');
     width: 150px;
     height: 150px;
     border:none;
     border-radius: 100px;
     margin: 0 auto 15px auto;
+    background-size: cover;     /*a imagem se adapta ao tamanho da div*/
+    background-position: center;
 }
 
 .aside__box p {
